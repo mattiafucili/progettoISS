@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.mattia.bluetoothle.MainActivity">
+
+    <Button
+        android:id="@+id/buttonDiscovery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="148dp"
+        android:text="Start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:id="@+id/txtAccX"
+        android:layout_width="191dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="42dp"
+        app:layout_constraintLeft_toRightOf="@+id/txtX"
+        android:layout_marginTop="59dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDiscovery" />
+
+    <TextView
+        android:id="@+id/txtAccZ"
+        android:layout_width="194dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintLeft_toRightOf="@+id/txtZ"
+        app:layout_constraintTop_toBottomOf="@+id/txtAccY" />
+
+    <TextView
+        android:id="@+id/txtAccY"
+        android:layout_width="191dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintLeft_toRightOf="@+id/txtY"
+        app:layout_constraintTop_toBottomOf="@+id/txtAccX" />
+
+    <TextView
+        android:id="@+id/txtX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="143dp"
+        android:layout_marginLeft="46dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/txtY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtX"
+        android:layout_marginLeft="46dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/txtZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z"
+        android:layout_marginTop="54dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtY"
+        android:layout_marginLeft="46dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDiscovery"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAccX"
+        app:layout_constraintVertical_bias="0.461"
+        android:layout_marginLeft="146dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDebug"
+        android:layout_width="373dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txtAccZ"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
